@@ -14,6 +14,7 @@ void OnTriggerEnter2D (Collider2D other)
             PlayerStats.hasTeleport = true;
             PlayerStats.lives = 3;
             AudioManager.Instance.PlayMusicSFX(TPsound);
+            Debug.Log("Lives: " + PlayerStats.lives);
             Destroy(gameObject);
 
         }
